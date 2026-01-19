@@ -103,6 +103,31 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
+### [`BorgBackup`](https://github.com/borgbackup/borg) (`borg`)
+
+**Replaces:** `rsnapshot`, `duplicity`, `tar` backups
+
+**Featured in:** [Episode 9](https://linuxmatters.sh/9/)
+
+> Deduplicating backup program with encryption and compression.
+
+**Why it's brilliant:** Borg treats your backups like a proper archive, not just a pile of snapshots. Content-defined chunking means only changed portions of files are stored, slashing storage costs dramatically. Second backup of a 100GB home directory? Takes seconds and mere megabytes. Add authenticated encryption, multiple compression algorithms, and the ability to mount any backup as a filesystem for easy browsing.
+
+**Killer feature:** Content-defined deduplication works across files, directories, and even different machines sharing a repository.
+
+<details>
+<summary>Screenshot</summary>
+
+![BorgBackup creating an archive](https://asciinema.org/a/133292.svg)
+
+</details>
+
+**Pro tip:** Use `borg mount repo::archive /mnt/backup` to browse any backup as a read-only filesystem.
+
+**Pairs well with:** [`rclone`](#rclone) for offsite replication of your Borg repository.
+
+---
+
 ### [`bottom`](https://github.com/ClementTsang/bottom) (`btm`)
 
 **Replaces:** `top`, `htop`
@@ -148,6 +173,29 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 **Pro tip:** Use `--color intel-new` or `--color amd` to match your CPU manufacturer's branding.
 
 **Pairs well with:** [`fastfetch`](#fastfetch) for complete system information.
+
+---
+
+### [`Distrobox`](https://github.com/89luca89/distrobox) (`distrobox`)
+
+**Replaces:** Full VMs for testing distros, `toolbox`
+
+**Featured in:** [Episode 14](https://linuxmatters.sh/14/)
+
+> Run any Linux distribution inside your terminal using containers.
+
+**Why it's brilliant:** Need Ubuntu packages on Arch? Fedora tools on Debian? Distrobox wraps Podman or Docker to create containers that feel native, sharing your home directory, X11/Wayland, audio, and USB devices seamlessly. Launch GUI apps from the container and they appear alongside your regular applications. It's the escape hatch for immutable distros and the compatibility layer you didn't know you needed.
+
+**Killer feature:** Export container applications to your host's application menu with `distrobox-export`, making them indistinguishable from native apps.
+
+<details>
+<summary>Screenshot</summary>
+
+![Distrobox overview diagram](https://user-images.githubusercontent.com/598882/144294862-f6684334-ccf4-4e5e-85f8-1d66210a0fff.png)
+
+</details>
+
+**Pro tip:** Use `distrobox-assemble` with a manifest file to declaratively manage multiple containers.
 
 ---
 
@@ -265,6 +313,31 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 </details>
 
 **Pro tip:** Add `font-name=JetBrainsMono Nerd Font` to your kmscon.conf for a modern coding font experience.
+
+---
+
+### [`Lima`](https://github.com/lima-vm/lima) (`limactl`)
+
+**Replaces:** Docker Desktop, VirtualBox (for Linux VMs on macOS)
+
+**Featured in:** [Episode 22](https://linuxmatters.sh/22/)
+
+> Linux virtual machines on macOS with automatic file sharing and port forwarding.
+
+**Why it's brilliant:** Lima brings WSL-style Linux VM integration to macOS. Automatic file sharing, port forwarding, and containerd integration mean you get a proper Linux environment without the Docker Desktop licensing headaches. Spin up Ubuntu, Fedora, Arch, or dozens of other distros with a single command. The default template includes containerd and nerdctl, so you're ready to run containers immediately.
+
+**Killer feature:** Templates for Docker, Kubernetes, and various distros let you spin up preconfigured environments in seconds.
+
+<details>
+<summary>Screenshot</summary>
+
+![Lima terminal session](https://lima-vm.io/images/demo.gif)
+
+</details>
+
+**Pro tip:** Run `lima nerdctl` directly from your macOS terminal to use containerd without entering the VM.
+
+**Pairs well with:** [`Distrobox`](#distrobox) inside the VM for even more flexibility.
 
 ---
 
@@ -387,6 +460,31 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
+### [`playerctl`](https://github.com/altdesktop/playerctl) (`playerctl`)
+
+**Replaces:** Player-specific CLI tools, manual D-Bus calls
+
+**Featured in:** [Episode 36](https://linuxmatters.sh/36/)
+
+> Command-line controller for MPRIS-compatible media players.
+
+**Why it's brilliant:** One command to rule them all. Control Spotify, VLC, Firefox, mpv, or any MPRIS-compliant player with the same interface. Bind media keys in your window manager without caring which player is active. The format strings let you build exactly the "now playing" output you want for status bars or notifications. Works with practically every media player on Linux.
+
+**Killer feature:** Follows the active player automatically, so your media keys control whichever app is actually playing.
+
+<details>
+<summary>Screenshot</summary>
+
+![playerctl controlling media playback](https://github.com/altdesktop/playerctl/raw/master/doc/screenshot.png)
+
+</details>
+
+**Pro tip:** Use `playerctl metadata --format '{{ artist }} - {{ title }}'` to build custom now-playing strings.
+
+**Pairs well with:** [`starship`](#starship) for displaying current track in your prompt.
+
+---
+
 ### [`pueue`](https://github.com/Nukesor/pueue) (`pueue`)
 
 **Replaces:** `&`, `nohup`, `screen` (for job queuing)
@@ -432,6 +530,31 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 </details>
 
 **Pairs well with:** [`cpufetch`](#cpufetch) and [`fastfetch`](#fastfetch) for comprehensive system info.
+
+---
+
+### [`rclone`](https://github.com/rclone/rclone) (`rclone`)
+
+**Replaces:** Provider-specific sync tools, `s3cmd`, cloud vendor CLIs
+
+**Featured in:** [Episode 9](https://linuxmatters.sh/9/)
+
+> Sync files to and from cloud storage, supporting 70+ providers.
+
+**Why it's brilliant:** It's rsync for the cloud era. Google Drive, S3, Dropbox, OneDrive, Backblaze B2, and dozens more, all through one consistent interface. Mount any cloud storage as a local filesystem with FUSE, encrypt files client-side before upload, or bisync between two remotes. The configuration wizard makes setup painless even for providers with complex OAuth flows.
+
+**Killer feature:** `rclone mount` turns any cloud storage into a local filesystem, making remote files accessible to any application.
+
+<details>
+<summary>Screenshot</summary>
+
+![rclone syncing files](https://rclone.org/img/rclone-120x120.png)
+
+</details>
+
+**Pro tip:** Use `rclone sync --dry-run` first to preview changes before committing to a sync operation.
+
+**Pairs well with:** [`BorgBackup`](#borgbackup) for encrypted backups replicated to cloud storage.
 
 ---
 
@@ -483,6 +606,29 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
+### [`starship`](https://github.com/starship/starship) (`starship`)
+
+**Replaces:** `powerline`, `oh-my-zsh themes`
+
+**Featured in:** [Episode 47](https://linuxmatters.sh/47/)
+
+> Minimal, blazing-fast, infinitely customisable prompt for any shell.
+
+**Why it's brilliant:** Your prompt shows what matters, fast. Git status, language versions, cloud context, command duration, all rendered in milliseconds. Works with every major shell without framework dependencies. Configuration is simple TOML, and the preset system lets you start with a polished look before tweaking. Finally, a prompt that doesn't slow you down.
+
+**Killer feature:** Intelligent context detection shows relevant information only when needed, keeping the prompt clean.
+
+<details>
+<summary>Screenshot</summary>
+
+![starship prompt demonstration](https://raw.githubusercontent.com/starship/starship/master/media/demo.gif)
+
+</details>
+
+**Pro tip:** Run `starship preset pastel-powerline -o ~/.config/starship.toml` to start with a curated theme.
+
+---
+
 ### [`stress-ng`](https://github.com/ColinIanKing/stress-ng) (`stress-ng`)
 
 **Replaces:** `stress`
@@ -508,29 +654,6 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
-### [`starship`](https://github.com/starship/starship) (`starship`)
-
-**Replaces:** `powerline`, `oh-my-zsh themes`
-
-**Featured in:** [Episode 47](https://linuxmatters.sh/47/)
-
-> Minimal, blazing-fast, infinitely customisable prompt for any shell.
-
-**Why it's brilliant:** Your prompt shows what matters, fast. Git status, language versions, cloud context, command duration, all rendered in milliseconds. Works with every major shell without framework dependencies. Configuration is simple TOML, and the preset system lets you start with a polished look before tweaking. Finally, a prompt that doesn't slow you down.
-
-**Killer feature:** Intelligent context detection shows relevant information only when needed, keeping the prompt clean.
-
-<details>
-<summary>Screenshot</summary>
-
-![starship prompt demonstration](https://raw.githubusercontent.com/starship/starship/master/media/demo.gif)
-
-</details>
-
-**Pro tip:** Run `starship preset pastel-powerline -o ~/.config/starship.toml` to start with a curated theme.
-
----
-
 ### [`trippy`](https://github.com/fujiapple852/trippy) (`trip`)
 
 **Replaces:** `traceroute`, `mtr`
@@ -553,6 +676,31 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 **Pro tip:** Use `-m tui-as` mode to display autonomous system information for each hop.
 
 **Pairs well with:** [`gping`](#gping) for simpler latency monitoring.
+
+---
+
+### [`vhs`](https://github.com/charmbracelet/vhs) (`vhs`)
+
+**Replaces:** `asciinema`, `ttyrec`, screen recording
+
+**Featured in:** [Episode 43](https://linuxmatters.sh/43/)
+
+> Create terminal GIFs and videos from scripted "tape" files.
+
+**Why it's brilliant:** Stop fumbling through live recordings hoping you don't make a typo. VHS uses simple tape files to script exactly what gets typed, when, and how fast. The output is pixel-perfect, reproducible, and easy to iterate on. Built-in themes, configurable fonts, window chrome, and support for GIF, MP4, and WebM mean your terminal demos look professional without video editing.
+
+**Killer feature:** Record mode captures your terminal session and generates a tape file, which you can then tweak and re-render until perfect.
+
+<details>
+<summary>Screenshot</summary>
+
+![VHS demo showing terminal recording](https://stuff.charm.sh/vhs/examples/neofetch_3.gif)
+
+</details>
+
+**Pro tip:** Use `vhs record > demo.tape` to capture a session, then edit the tape file to perfect your timing.
+
+**Pairs well with:** [`gum`](https://github.com/charmbracelet/gum) for interactive prompts in your recordings.
 
 ---
 
