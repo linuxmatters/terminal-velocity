@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Telegram Community
+    url: https://t.me/joinchat/Plfd07auVLayNLBD
+    about: Chat with the Linux Matters community about CLI tools and more.
+  - name: Linux Matters Podcast
+    url: https://linuxmatters.sh
+    about: Listen to the "A to Z of Modern Unix" segment that inspired this list.
+  - name: Contact the Show
+    url: https://linuxmatters.sh/contact
+    about: Email the hosts or find us on Mastodon, Bluesky, and Reddit.

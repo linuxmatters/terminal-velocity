@@ -1,0 +1,72 @@
+name: Tool Suggestion
+description: Suggest a brilliant CLI/TUI tool for the list
+title: "[Tool] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found something cracking? We'd love to hear about it.
+
+        Don't worry about writing the full entry - just tell us enough to evaluate whether it's Terminal Velocity material.
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      description: The command you'd type to run it
+      placeholder: "e.g. ripgrep, bat, lazygit"
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: Repository URL
+      description: Link to the source code
+      placeholder: "https://github.com/user/repo"
+    validations:
+      required: true
+
+  - type: input
+    id: replaces
+    attributes:
+      label: What does it replace?
+      description: The traditional tool(s) this improves upon
+      placeholder: "e.g. grep, cat, git status"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-brilliant
+    attributes:
+      label: Why is it brilliant?
+      description: What makes this tool worth switching to? Focus on user experience, not implementation.
+      placeholder: |
+        Tell us what makes it special:
+        - What problem does it solve better?
+        - What's the "aha" moment when you first use it?
+        - Why would someone switch from the traditional tool?
+    validations:
+      required: true
+
+  - type: textarea
+    id: killer-feature
+    attributes:
+      label: Killer feature
+      description: One standout capability that makes you smile
+      placeholder: "The thing that makes you go 'oh, that's clever'"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quick checks
+      options:
+        - label: Tool has a working public repository
+          required: true
+        - label: Actively maintained (commits within the last 2 years)
+          required: true
+        - label: Not already in the list (I've checked)
+          required: true

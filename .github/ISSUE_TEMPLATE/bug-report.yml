@@ -1,0 +1,50 @@
+name: Bug Report
+description: Report broken links, outdated information, or corrections
+title: "[Fix] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Spotted something wrong? Thanks for helping keep the list accurate.
+
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry?
+      description: The tool name or section with the issue
+      placeholder: "e.g. ripgrep, Introduction section"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What's wrong?
+      options:
+        - Broken link
+        - Outdated information
+        - Typo or grammar
+        - Tool is abandoned/unmaintained
+        - Screenshot missing or broken
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs fixing?
+      placeholder: "The repository link returns 404..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested fix
+      description: If you know the correct information, pop it here
+      placeholder: "The new URL is..."
+    validations:
+      required: false
