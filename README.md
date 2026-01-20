@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://linuxmatters.sh" target="_blank"><img src="https://raw.githubusercontent.com/linuxmatters/.github/main/.github/banner.png" alt="Linux Matters"></a>
+</p>
+
 # Terminal Velocity
 
 **The A to Z of Modern Unix**
@@ -741,6 +745,19 @@ Spotted a brilliant tool we've missed? Contributions are welcome. But fair warni
 - **Place entries alphabetically** within the list
 
 See the full guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## Community
+
+Join the conversation, share your favourite tools, or just hang out with fellow terminal enthusiasts:
+
+<p align="center">
+  &nbsp;<a href="https://t.me/joinchat/Plfd07auVLayNLBD" target="_blank"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-1D98DC?style=for-the-badge&logo=telegram&logoColor=%23ffffff"></a>&nbsp;
+  &nbsp;<a href="https://www.reddit.com/r/LinuxMatters/" target="_blank"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-F94300?style=for-the-badge&logo=reddit&logoColor=%23ffffff"></a>&nbsp;
+  &nbsp;<a href="https://ubuntu.social/@linuxmatters" target="_blank"><img alt="Mastodon" src="https://img.shields.io/badge/Mastodon-6468fa?style=for-the-badge&logo=mastodon&logoColor=%23ffffff"></a>&nbsp;
+  &nbsp;<a href="https://bsky.app/profile/linuxmatters.sh" target="_blank"><img alt="Bluesky" src="https://img.shields.io/badge/Bluesky-0772D8?style=for-the-badge&logo=bluesky&logoColor=%23ffffff"></a>&nbsp;
+</p>
 
 ---
 
