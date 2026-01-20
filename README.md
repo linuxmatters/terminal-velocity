@@ -26,7 +26,7 @@ Not everything with a Git repo gets in. We're after tools that deliver a noticea
 
 ## The List
 
-Entries are ordered alphabetically. Each tool includes what it replaces, why you'd want it, and tips to get you started.
+Entries are ordered alphabetically. Each tool includes what it replaces, why you'd want it, and tips to get you started. No filler, no padding, just the good stuff.
 
 <!-- Entries go here, alphabetically ordered -->
 
@@ -733,7 +733,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ## Contributing
 
-Spotted a brilliant tool we've missed? Contributions are welcome. But fair warning, Martin is a fussy so-and-so and will be a ruthless judge of your opinions. If you do suggest something cracking, you'll get a mention on the podcast.
+Spotted a brilliant tool we've missed? Contributions are welcome. But fair warning: [Martin](https://wimpysworld.link/) is a fussy so-and-so and will judge your suggestions with ruthless enthusiasm. Get one past him and you'll earn a mention on the podcast.
 
 - **One tool per PR** for new entries
 - **Check it's actively maintained** (commits within the last 2 years)
@@ -748,4 +748,4 @@ See the full guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-You're free to share and adapt this content, provided you give appropriate credit.
+You're free to share and adapt this content, provided you give appropriate credit. Go on, spread the word.
