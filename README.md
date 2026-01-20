@@ -72,7 +72,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 <details>
 <summary>Screenshot</summary>
 
-![amdgpu_top TUI interface](https://raw.githubusercontent.com/Umio-Yasuno/amdgpu_top/main/assets/amdgpu_top_tui.png)
+![amdgpu_top TUI interface](https://github.com/Umio-Yasuno/amdgpu_top/assets/53935716/859010d8-07b3-411c-b079-c4a837855d41)
 
 </details>
 
@@ -309,13 +309,6 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Killer feature:** Full Unicode support with Pango rendering means emoji and Nerd Fonts actually work on the bare console.
 
-<details>
-<summary>Screenshot</summary>
-
-![kmscon virtual console](https://www.freedesktop.org/wiki/Software/kmscon/kmscon.png)
-
-</details>
-
 **Pro tip:** Add `font-name=JetBrainsMono Nerd Font` to your kmscon.conf for a modern coding font experience.
 
 ---
@@ -379,13 +372,6 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 **Why it's brilliant:** Same package management, dramatically better experience. Parallel downloads mean faster installs. The output is clean and colourful, showing exactly what's being installed, upgraded, or removed in a clear summary. History tracking lets you undo entire transactions if something goes wrong. It's apt, but pleasant.
 
 **Killer feature:** Transaction history with `nala history` lets you undo or redo entire package operations by ID.
-
-<details>
-<summary>Screenshot</summary>
-
-![nala package manager interface](https://gitlab.com/volian/nala/-/raw/main/imgs/nala.png)
-
-</details>
 
 **Pro tip:** Use `nala fetch` to automatically find and configure the fastest mirrors for your location.
 
@@ -476,13 +462,6 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Killer feature:** Follows the active player automatically, so your media keys control whichever app is actually playing.
 
-<details>
-<summary>Screenshot</summary>
-
-![playerctl controlling media playback](https://github.com/altdesktop/playerctl/raw/master/doc/screenshot.png)
-
-</details>
-
 **Pro tip:** Use `playerctl metadata --format '{{ artist }} - {{ title }}'` to build custom now-playing strings.
 
 **Pairs well with:** [`starship`](#starship) for displaying current track in your prompt.
@@ -548,13 +527,6 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 **Why it's brilliant:** It's rsync for the cloud era. Google Drive, S3, Dropbox, OneDrive, Backblaze B2, and dozens more, all through one consistent interface. Mount any cloud storage as a local filesystem with FUSE, encrypt files client-side before upload, or bisync between two remotes. The configuration wizard makes setup painless even for providers with complex OAuth flows.
 
 **Killer feature:** `rclone mount` turns any cloud storage into a local filesystem, making remote files accessible to any application.
-
-<details>
-<summary>Screenshot</summary>
-
-![rclone syncing files](https://rclone.org/img/rclone-120x120.png)
-
-</details>
 
 **Pro tip:** Use `rclone sync --dry-run` first to preview changes before committing to a sync operation.
 
@@ -644,13 +616,6 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 **Why it's brilliant:** The original `stress` tool was fine for basic CPU and memory torture, but stress-ng takes it to another level entirely. Over 370 stressors covering CPU, memory, I/O, network, filesystem, and kernel interfaces. Need to stress test your ZFS pool? There's a stressor for that. Want to hammer your CPU's AVX-512 units? Covered. It's the go-to tool for burn-in testing, thermal validation, and finding hardware issues before they find you.
 
 **Killer feature:** Class-based stressor selection lets you target specific subsystems, like `--class io` or `--class cpu`, without memorising individual stressor names.
-
-<details>
-<summary>Screenshot</summary>
-
-![stress-ng running CPU stress test](https://github.com/ColinIanKing/stress-ng/raw/master/mascot/stress-ng-mascot.png)
-
-</details>
 
 **Pro tip:** Use `--metrics` to see bogo ops/sec and track performance across kernel versions or hardware changes.
 
