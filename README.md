@@ -107,6 +107,29 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
+### [`bin`](https://github.com/marcosnils/bin) (`bin`)
+
+**Replaces:** `wget`, `curl`
+
+**Featured in:** None yet.
+
+> A "single binary-file release" downloader and update for github, gitlab and hashicorp repositories.
+
+**Why it's brilliant:** Most "devops" tooling, often offered as an unpackaged binary release for Linux, assumes you're happy to go around and update those binaries every few weeks, this tool removes the hassle of installing and updating without introducing packaging that the upstream project isn't prepared to adopt. Also works with docker images which have a single binary to execute too.
+
+**Killer feature:** Update everything in one go with `bin update`.
+
+<details>
+<summary>Screenshot</summary>
+
+![A demo of bin installing binaries with multiple versions across multiple platforms](https://user-images.githubusercontent.com/1578458/87901619-ee629a80-ca2d-11ea-8609-8a8eb39801d2.gif)
+
+</details>
+
+**Pro tip:** Use `bin pin` if you've got a specific version of a tool to stop it trying to update that one.
+
+---
+
 ### [`BorgBackup`](https://github.com/borgbackup/borg) (`borg`)
 
 **Replaces:** `rsnapshot`, `duplicity`, `tar` backups
