@@ -249,6 +249,31 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
+### [`fzf`](https://github.com/junegunn/fzf) (`fzf`)
+
+**Replaces:** `grep`, `find` (in some cases), `Ctrl+R`
+
+**Featured in:** None yet.
+
+> A general-purpose command-line fuzzy finder that turns any list into an interactive, filterable menu.
+
+**Why it's brilliant:** It takes the Unix philosophy of piping text streams and adds fast, forgiving, interactive selection. Anything that produces lines of text (files, processes, git branches, command history) becomes instantly searchable with typo-tolerant matching. It plugs into your shell with zero friction, replacing simple reverse-search and manual grepping.
+
+**Killer feature:** Shell key bindings out of the box: `Ctrl+R` for fuzzy history search, `Ctrl+T` for file picking, `Alt+C` for directory jumping.
+
+<details>
+<summary>Screenshot</summary>
+
+![fzf in action showing fuzzy matching on a file list with a preview pane](https://raw.githubusercontent.com/junegunn/i/master/fzf-style-default.png)
+
+</details>
+
+**Pro tip:** Pipe anything into it: `docker ps | fzf`, `git branch | fzf`. Then wire the selection into your next command with `$(...)`.
+
+**Pairs well with:** [`zoxide`](#zoxide-z) for smart directory jumping, [`ripgrep`](#ripgrep-rg) for interactive code search.
+
+---
+
 ### [`gocryptfs`](https://github.com/rfjakob/gocryptfs) (`gocryptfs`)
 
 **Replaces:** `EncFS`, `ecryptfs`
