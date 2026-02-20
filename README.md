@@ -384,6 +384,28 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
+### [`mise-en-place`](https://github.com/jdx/mise) (`mise`)
+
+**Replaces:** `asdf`, `pyenv`, `nvm`, `rvm`, `rbenv`, `docker`, `nix`, `devbox`, `direnv`, `just`, `make`
+ 
+> Mise is a modern development environment manager to create reproducible development environments.
+
+**Why it's brilliant:** It's simple and easy to use, allows pinning tool versions, setting environment variables, and defining tasks to be executed. You can define a global environment, as well as specific per-directory environments with a `mise.toml` file that is read automatically when you `cd` into a directory.
+
+**Killer feature:** Besides its core tools, mise can download packages from multiple registries and sources, including GitHub, GitLab, npm, and others.
+
+<details>
+<summary>Screenshot</summary>
+
+![mise demo managing multiple node versions](https://github.com/jdx/mise/raw/main/docs/tapes/demo.gif)
+
+</details>
+
+**Pro tip:** Mise can generate GitHub Actions and devcontainer definition files that use your environment.
+
+
+---
+
 ### [`nala`](https://gitlab.com/volian/nala) (`nala`)
 
 **Replaces:** `apt`
