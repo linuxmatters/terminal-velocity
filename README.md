@@ -78,7 +78,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `--smi` for a simple nvidia-smi style output, or `--gui` for the full graphical interface.
 
-**Pairs well with:** [`nvtop`](#nvtop) for multi-vendor GPU monitoring.
+**Pairs well with:** [`nvtop`](#nvtop-nvtop) for multi-vendor GPU monitoring.
 
 ---
 
@@ -103,7 +103,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Press `Alt+<num>` to quick-jump to previous items in the history list.
 
-**Pairs well with:** [`zoxide`](#zoxide) for directory-aware history filtering.
+**Pairs well with:** [`zoxide`](#zoxide-z) for directory-aware history filtering.
 
 ---
 
@@ -151,7 +151,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `borg mount repo::archive /mnt/backup` to browse any backup as a read-only filesystem.
 
-**Pairs well with:** [`rclone`](#rclone) for offsite replication of your Borg repository.
+**Pairs well with:** [`rclone`](#rclone-rclone) for offsite replication of your Borg repository.
 
 ---
 
@@ -199,7 +199,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `--color intel-new` or `--color amd` to match your CPU manufacturer's branding.
 
-**Pairs well with:** [`fastfetch`](#fastfetch) for complete system information.
+**Pairs well with:** [`fastfetch`](#fastfetch-fastfetch) for complete system information.
 
 ---
 
@@ -318,7 +318,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `gping --cmd` to graph the execution time of arbitrary commands instead of network latency.
 
-**Pairs well with:** [`trippy`](#trippy) for full route diagnostics.
+**Pairs well with:** [`trippy`](#trippy-trip) for full route diagnostics.
 
 ---
 
@@ -382,7 +382,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Run `lima nerdctl` directly from your macOS terminal to use containerd without entering the VM.
 
-**Pairs well with:** [`Distrobox`](#distrobox) inside the VM for even more flexibility.
+**Pairs well with:** [`Distrobox`](#distrobox-distrobox) inside the VM for even more flexibility.
 
 ---
 
@@ -468,7 +468,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `--colorful` for spectrum-like bar charts on terminals that support 256 colours.
 
-**Pairs well with:** [`nvtop`](#nvtop) if you need multi-vendor support.
+**Pairs well with:** [`nvtop`](#nvtop-nvtop) if you need multi-vendor support.
 
 ---
 
@@ -516,7 +516,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Run `onefetch --image /path/to/logo.png` in supported terminals to display a custom project logo.
 
-**Pairs well with:** [`fastfetch`](#fastfetch) and [`cpufetch`](#cpufetch) for the complete fetch family.
+**Pairs well with:** [`fastfetch`](#fastfetch-fastfetch) and [`cpufetch`](#cpufetch-cpufetch) for the complete fetch family.
 
 ---
 
@@ -534,7 +534,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `playerctl metadata --format '{{ artist }} - {{ title }}'` to build custom now-playing strings.
 
-**Pairs well with:** [`starship`](#starship) for displaying current track in your prompt.
+**Pairs well with:** [`starship`](#starship-starship) for displaying current track in your prompt.
 
 ---
 
@@ -559,7 +559,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `pueue follow <task_id>` to tail the output of a running task in real-time.
 
-**Pairs well with:** [`just`](#just) for wrapping complex task sequences.
+**Pairs well with:** [`just`](#just-just) for wrapping complex task sequences.
 
 ---
 
@@ -582,7 +582,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 </details>
 
-**Pairs well with:** [`cpufetch`](#cpufetch) and [`fastfetch`](#fastfetch) for comprehensive system info.
+**Pairs well with:** [`cpufetch`](#cpufetch-cpufetch) and [`fastfetch`](#fastfetch-fastfetch) for comprehensive system info.
 
 ---
 
@@ -600,7 +600,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `rclone sync --dry-run` first to preview changes before committing to a sync operation.
 
-**Pairs well with:** [`BorgBackup`](#borgbackup) for encrypted backups replicated to cloud storage.
+**Pairs well with:** [`BorgBackup`](#borgbackup-borg) for encrypted backups replicated to cloud storage.
 
 ---
 
@@ -623,7 +623,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `-tpy` or `-tjs` to instantly filter by language without remembering file extensions.
 
-**Pairs well with:** [`fzf`](#fzf) for interactive filtering of search results.
+**Pairs well with:** [`fzf`](#fzf-fzf) for interactive filtering of search results.
 
 ---
 
@@ -648,7 +648,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Press `F2` to switch between different stress methods depending on what you want to test.
 
-**Pairs well with:** [`stress-ng`](#stress-ng) for comprehensive system torture.
+**Pairs well with:** [`stress-ng`](#stress-ng-stress-ng) for comprehensive system torture.
 
 ---
 
@@ -689,7 +689,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `--metrics` to see bogo ops/sec and track performance across kernel versions or hardware changes.
 
-**Pairs well with:** [`s-tui`](#s-tui) for visual monitoring during stress tests.
+**Pairs well with:** [`s-tui`](#s-tui-s-tui) for visual monitoring during stress tests.
 
 ---
 
@@ -714,7 +714,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `-m tui-as` mode to display autonomous system information for each hop.
 
-**Pairs well with:** [`gping`](#gping) for simpler latency monitoring.
+**Pairs well with:** [`gping`](#gping-gping) for simpler latency monitoring.
 
 ---
 
@@ -764,7 +764,7 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 **Pro tip:** Use `z foo/` with a trailing slash to match subdirectories starting with "foo" in the current path.
 
-**Pairs well with:** [`Atuin`](#atuin) for directory-aware shell history.
+**Pairs well with:** [`Atuin`](#atuin-atuin) for directory-aware shell history.
 
 <!-- Add new entries above this line, in alphabetical order -->
 
