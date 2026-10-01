@@ -675,6 +675,29 @@ Entries are ordered alphabetically. Each tool includes what it replaces, why you
 
 ---
 
+### [`statusbar`](https://github.com/vrypan/statusbar) (`statusbar`)
+
+**Replaces:** Nothing - terminals didn't have this.
+
+> Give your terminal a second, persistent output area for live information.
+
+**Why it's brilliant:** statusbar adds something terminals have traditionally lacked, a persistent area for information that shouldn't disappear into the scrollback. Commands can update the status bar while you keep working normally in the main terminal. Use it for system metrics, GitHub notifications, build status, timers, remote-host information or anything else a command can produce.
+
+**Killer feature:** The status bar isn't just decoration, shell commands can update it dynamically, making it a programmable second output channel.
+
+<details>
+<summary>Screenshot</summary>
+
+![statusbar_demo_with_themes](https://github.com/user-attachments/assets/1ced09cd-dfb4-482e-bc76-bb08309403c0)
+
+</details>
+
+**Pro tip:** Combine several small commands to build a live dashboard that remains visible while you work.
+
+**Pairs well with:** [`starship`](#starship-starship) for displaying the first line of your prompt at a fixed position on the screen.
+
+---
+
 ### [`stress-ng`](https://github.com/ColinIanKing/stress-ng) (`stress-ng`)
 
 **Replaces:** `stress`
